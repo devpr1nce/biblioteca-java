@@ -75,12 +75,12 @@ public class Program {
                         System.out.println("Opção inválida! Escolha um número de 1 a 5.");
                 }
             }
-            // O bloco CATCH captura o erro específico do Scanner
+            // O bloco CATCH captura o erro específico do Scanner.
             catch (InputMismatchException e) {
                 System.out.println("\n❌ ERRO DE ENTRADA: Por favor, digite apenas números inteiros.");
-                sc.nextLine(); // Pulo do Gato 2.0: Limpar o "lixo" que causou o erro do buffer
+                sc.nextLine(); // Limpar o "lixo" que causou o erro do buffer
             }
-            // Uma rede de segurança para qualquer outro erro inesperado
+            // Uma rede de segurança para qualquer outro erro inesperado.
             catch (Exception e) {
                 System.out.println("\n❌ Ocorreu um erro inesperado: " + e.getMessage());
                 sc.nextLine();
